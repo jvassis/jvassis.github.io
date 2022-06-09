@@ -249,14 +249,43 @@ a {
 
   header {
     display: none;
+    height: 0px;
+    transition: .5s;
+    visibility: hidden;
+    overflow-y: hidden;
   }
   
   .mobile-menu {
     display: block;
   }
 
+  header.active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    z-index: 1000;
+    visibility: visible;
+  }
+
+
+  header.active .menu .nav-list {
+    display: block;
+    border: none;
+    width: 100%;
+  }
+
+  header.active a {
+    padding: 2rem;
+    border-right: none;
+    border-bottom: 1px solid #2e618b;
+  }
+
   .about {
-    margin-top: 50px;
+    margin-top: 30px;
     flex-direction: column;
     width: 100%;
   }

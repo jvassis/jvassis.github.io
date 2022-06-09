@@ -38,6 +38,7 @@
 .sobre .box i {
   margin: 0px 10px;
   color: var(--left-text-color);
+  font-size: 2rem;
 }
 
 .resume__left h2, .resume__left p {
