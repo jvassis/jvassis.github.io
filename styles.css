@@ -210,6 +210,25 @@ a {
   margin: 6px;
 }
 
+@media (max-width: 1028px) {
+  main {
+    width: 100%;
+  }
+
+  .about {
+    font-size: 14px;
+  }
+
+  .about button {
+    width: 16%;
+  }
+
+  .frase {
+    width: 70%;
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 900px) {
   main {
     width: 85%;
