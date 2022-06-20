@@ -281,11 +281,58 @@ main {
   }
 
   .networks {
+    margin: 0;
+    padding: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between !important;
   }
+
+  .networks .box .github {
+    margin: 0;
+    display: 0;
+    height: 35px;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .networks .box .github i {
+    margin-left: 5px;
+  }
+
+  .networks .box .github span {
+    display: none;
+  }
+
+  .networks .box i {
+    font-size: 1.2rem;
+  }
+
+  .networks .box .others a:first-child,
+  .networks .box .others a:last-child {
+    display: none;
+  }
+
+  .networks .box .others {
+    border-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .networks .box .others a:nth-child(2),
+  .networks .box .others a:nth-child(3) {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    width: 3rem;
+    height: 35px;
+  }
+
+
 
   header {
     display: none;
@@ -318,7 +365,8 @@ main {
     right: 0%;
   }
 
-  header .menu .nav-list, header.active .menu .nav-list {
+  header .menu .nav-list,
+  header.active .menu .nav-list {
     display: block;
     border: none;
     width: 100%;
@@ -397,36 +445,6 @@ main {
     max-height: 40px;
   }
 
-  .networks {
-    order: 0;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .networks {
-    margin-right: 5px;
-    width: 100%;
-    justify-content: right;
-  }
-
-  .networks .box i {
-    padding: 3px;
-    margin: 2px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    font-size: 1.3rem;
-  }
-
-  .networks .box i:first-child {
-    margin-left: 10px;
-  }
-
-  .networks .box i:last-child {
-    margin-right: 10px;
-  }
-
   .frase {
     margin-top: 40px;
     padding: 0;
@@ -436,27 +454,6 @@ main {
 
   .frase span {
     display: inline-block;
-  }
-
-  .networks .box .github {
-    height: 25px;
-    margin-right: 7px;
-  }
-
-  .networks .box .github a i, .networks .box .github a {
-    font-size: 10pt;
-  }
-
-  .networks .box .github i {
-    padding: 0;
-    margin: 0;
-    margin-right: 5px;
-    font-size: 12pt;
-    color: #4d4d4d;
-  }
-
-  .networks .box .others a:nth-child(1), .networks .box .others a:nth-child(4) {
-    display: none;
   }
 
 }
