@@ -31,11 +31,56 @@ main {
 }
 
 .logo {
-  font-size: 28pt;
+  font-size: 32pt;
   color: #dcdedf;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo span {
+  margin-left: 12px;
 }
 
 .networks .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.networks .box .github {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd343;
+  height: 40%;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.networks .box .github a i, .networks .box .github a {
+  color: #4d4d4d;
+  font-size: 12pt;
+}
+
+.networks .box .github i {
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+  font-size: 16pt;
+  color: #4d4d4d;
+}
+
+.networks .box .others {
   display: flex;
   flex-direction: row;
   background-color: #1d2833;
@@ -46,9 +91,10 @@ main {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-
   margin-top: 15px;
   margin-bottom: 15px;
+
+  align-items: center;
 }
 
 .networks i {
@@ -64,18 +110,6 @@ main {
 
 .networks i:first-child {
   margin-left: 25px;
-}
-
-.logo-j {
-  color: #3480ad;
-  font-size: 44pt;
-  font-weight: bold;
-}
-
-.logo-a {
-  color: #ebb917;
-  font-size: 42pt;
-  font-weight: bold;
 }
 
 header {
@@ -204,10 +238,10 @@ a {
 }
 
 .mobile-menu div{
-  width: 25px;
+  width: 20px;
   height: 2px;
   background-color: #c6c7c2;
-  margin: 6px;
+  margin: 5px;
 }
 
 @media (max-width: 1028px) {
@@ -310,7 +344,6 @@ main {
     transition-duration: .3s;
   }
 
-
   .mobile-menu .line1 {
     transform: translateY(0px) rotate(-180deg);
     transition-duration: .3s;
@@ -404,4 +437,26 @@ main {
   .frase span {
     display: inline-block;
   }
+
+  .networks .box .github {
+    height: 25px;
+    margin-right: 7px;
+  }
+
+  .networks .box .github a i, .networks .box .github a {
+    font-size: 10pt;
+  }
+
+  .networks .box .github i {
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+    font-size: 12pt;
+    color: #4d4d4d;
+  }
+
+  .networks .box .others a:nth-child(1), .networks .box .others a:nth-child(4) {
+    display: none;
+  }
+
 }
