@@ -90,7 +90,7 @@ let resumeButton = document.getElementById('resume-button')
 let opt = {
   margin:       0,
   filename:     'Jackson Assis - Currículo.pdf',
-  image:        { type: 'jpeg', quality: 0.98 },
+  image:        { type: 'jpeg', quality: 0.75 },
   html2canvas:  { scale: 4 },
   jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
 };
