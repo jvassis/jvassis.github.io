@@ -425,7 +425,8 @@ img {
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    background-color: var(--blue-dark-python-color);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
@@ -702,7 +703,7 @@ img {
 
 /* Media Queries */
 /* Dispositivos pequenos - menu de duas colunas */
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .nav__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem .5rem;
@@ -710,8 +711,12 @@ img {
 }
 
 @media (max-width: 968px) {
+  body {
+    background-color: var(--blue-python-color);
+  }
   .sobre .box i {
-    color: var(--networks-color);
+    /* color: var(--networks-color); */
+    color: white;
   }
 
   .bd-container {
@@ -809,7 +814,10 @@ img {
 }
 
 /* Modificações para tamanhos largos */
-@media screen and (min-width: 968px) {
+@media (min-width: 968px) {
+  .resume__left {
+    background-color: red !important;
+  }
   body {
     margin: 3rem 0;
   }
