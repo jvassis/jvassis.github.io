@@ -227,7 +227,7 @@ a {
   text-align: center;
 }
 
-.frase span span {
+.frase span a {
   color: #ffd057;
   border-bottom: 2px solid #ffd057;
 }
@@ -466,6 +466,6 @@ main {
 
   .frase span {
     display: inline-block;
+    margin-bottom: 10px;
   }
-
 }
