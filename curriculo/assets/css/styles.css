@@ -813,10 +813,9 @@ img {
 
 }
 
-/* Modificações para tamanhos largos */
 @media (min-width: 968px) {
   .resume__left {
-    background-color: red !important;
+    background-color: #113d61 !important;
   }
   body {
     margin: 3rem 0;
